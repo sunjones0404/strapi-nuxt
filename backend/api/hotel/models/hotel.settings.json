@@ -1,0 +1,69 @@
+{
+  "kind": "collectionType",
+  "collectionName": "hotels",
+  "info": {
+    "name": "Hotel"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "location": {
+      "type": "string"
+    },
+    "duration": {
+      "type": "string"
+    },
+    "departure": {
+      "type": "datetime"
+    },
+    "price": {
+      "type": "integer"
+    },
+    "button_text": {
+      "type": "string",
+      "default": "More info"
+    },
+    "button_url": {
+      "type": "string"
+    },
+    "image": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "brand": {
+      "model": "brand",
+      "via": "hotels"
+    },
+    "catering": {
+      "type": "string"
+    },
+    "rooms": {
+      "type": "string"
+    },
+    "baggage": {
+      "type": "string"
+    },
+    "protection": {
+      "type": "string",
+      "default": "ATOL Protected"
+    },
+    "transport": {
+      "type": "string"
+    },
+    "rating": {
+      "type": "integer",
+      "default": 3
+    }
+  }
+}

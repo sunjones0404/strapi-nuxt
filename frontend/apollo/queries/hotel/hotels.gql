@@ -1,0 +1,25 @@
+query Hotels {
+  hotels {
+    id
+    name
+    location
+    duration
+    departure
+    price
+    button_text
+    button_url
+    catering
+    rooms
+    baggage
+    protection
+    transport
+    rating
+    image {
+      url
+    }
+    brand {
+      name
+      slug
+    }
+  }
+}
