@@ -66,6 +66,21 @@
   --card-btn-dark: #6f002d;
 }
 
+.vibe {
+  --primary: #42b1c8;
+  --primary-dark: #0092d8;
+
+  --hub-bg: #f5f5f5;
+  --hub-bg-hover: #cccccc;
+  --hub-text: #757575;
+  --hub-text-active: #444444;
+  --hub-text-underline: #42b1c8;
+
+  --card-bg: #bddee4;
+  --card-btn: #42b1c8;
+  --card-btn-dark: #0092d8;
+}
+
 *,
 :after,
 :before {
